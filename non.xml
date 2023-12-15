@@ -1,0 +1,28 @@
+<!DOCTYPE company[
+    <!ELEMENT company (customer*)>
+    <!ELEMENT customer (id, name, role, salary, address)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+	<!ATTLIST name value CDATA #REQUIRED>
+    <!ELEMENT role (#PCDATA)>
+    <!ELEMENT salary (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+]>
+
+<company>
+    <customer>
+        <id>1</id>
+        <name value='abhi'>John Doe</name>
+        <role>Engineer</role>
+        <salary>75000</salary>
+        <address>123 Main Street, Cityville</address>
+    </customer>
+
+    <customer>
+        <id>2</id>
+        <name value="nani">Jane Smith</name>
+        <role>Manager</role>
+        <salary>90000</salary>
+        <address>456 Oak Avenue, Townburg</address>
+    </customer>
+</company>
